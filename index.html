@@ -482,7 +482,7 @@ async function recognizeFood(b64,media){
   if(food) return food;
 
   // 都失敗：拋出實際收到的內容片段，方便除錯
-  throw new Error("收到："+raw.slice(0,200));
+  throw new Error("收到："+raw.slice(0,500));
 }
 
 // 從任意字串/結構中挖出 {name,cal,p,c,f}
